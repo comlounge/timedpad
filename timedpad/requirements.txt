@@ -1,0 +1,5 @@
+-e git+git://github.com/devjones/PyEtherpadLite.git#egg=PyEtherpadLite
+flask
+pymongo
+Flask-PyMongo
+logbook

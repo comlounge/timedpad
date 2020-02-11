@@ -1,0 +1,85 @@
+.form-field {
+    display: block;
+    
+}
+
+.submitbutton {
+    display: inline-block;
+    height: 31px;
+    line-height: 24px;
+    margin: 0;
+    padding: 4px;
+
+    background: #efefef;
+    background: -moz-linear-gradient(top, #00a6fc 0%, #00a6fc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a6fc), color-stop(100%,#00a6fc));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a6fc', endColorstr='#00a6fc',GradientType=0 );
+
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0px rgba(0,0,0,0.3);
+
+    border: 1px solid transparent;
+
+    cursor: pointer;
+}
+.submitbutton:hover {
+    background: #efefef;
+    background: -moz-linear-gradient(top, #00a6fc 0%, #0096ec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a6fc), color-stop(100%,#0096ec));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a6fc', endColorstr='#0096ec',GradientType=0 );
+    border: 1px solid #555;
+    border-bottom: 1px solid #333;
+}
+
+.epform .text-input {
+
+    height: 24px;
+    font-size: 14px;
+    width: 200px;
+    display: inline;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #bbb;
+}
+
+input {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input:focus{
+  outline: 0;
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.muted, .muted > * {
+    color: #aaa;
+}
+
+.muted a {
+    color: #8cf;
+}
+div.alert-box { display: block; padding: 6px 7px; font-weight: bold; font-size: 13px; background: #eee; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative; }
+    .alert-box.success { background-color: #7fae00; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+    .alert-box.warning { background-color: #f68b01; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+    .alert-box.error { background-color: #c00000; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+    
+    .alert-box a.close { color: #000; position: absolute; right: 4px; top: 0; font-size: 18px; opacity: 0.2; padding: 4px; }
+    .alert-box a.close:hover,.alert-box a.close:focus { opacity: 0.4; }
+
+.error {
+    display: block;
+    margin: 20px;
+    background: #fee;
+    padding: 10px;
+    color: red;
+    text-align: left;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>   
+    <head>
+        <title>Etherpad Lite</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link href="{{url_for('static', filename='foundation.css')}}" rel="stylesheet"> 
+        <link href="{{url_for('static', filename='index.css')}}" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="row" style="margin-top: 4%; margin-bottom: 50px;">
+                <div class="two columns centered" style="text-align: center;">
+                    <img src="{{url_for('static', filename='logo.png')}}" /><br>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+                <div class="six columns centered">
+                    <h2>Etherpad löschen</h2>
+            </div>
+            <div class="row">
+                <div class="six columns centered panel" style="text-align: center; padding: 30px 0;">
+                    <div class="button large radius translate" onclick="go2Random()">Etherpad LÖSCHEN</div>
+                    <div style="margin: 10px">Bitte gebe den Kurznamen des Pads ein, das permanent gelöscht werden soll:</div>
+                    <form class="epform" action="/deleter"> 
+                        <div class="form-field">
+                            <div style="margin: 10px">
+                            <input style="margin: 10px 0" type="text" id="padname" name="p" autofocus class="text-input" style="font-size: 20px; width: 90%;">
+                        </div>
+                            {% if error_msg %}
+                                <div class="error" style="text-align:left">{{error_msg|safe}}</div>
+                            {% endif %}
+                            <input type="submit" value="JETZT LÖSCHEN" class="submitbutton"> 
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <script> 
+      
+    </body>
+</html>
